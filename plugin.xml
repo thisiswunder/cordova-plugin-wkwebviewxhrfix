@@ -7,7 +7,7 @@
 	<description>Cordova iOS plugin to fix local file access via XHR with WKWebView(resolves XHR Cross-Origin Resource Sharing (CORS) constraints) for Cordova iOS 6+</description>
 	<license>MIT</license>
 	<keywords>cordova,wkwebview,webview</keywords>
-	 <repo>https://github.com/AraHovakimyan/cordova-plugin-wkwebviewxhrfix</repo>
+	 <repo>https://github.com/thisiswunder/cordova-plugin-wkwebviewxhrfix</repo>
 	<engines>
 		<engine name="cordova" version=">=5.0.0" />
 		<engine name="cordova-ios" version=">=4.0.0" />

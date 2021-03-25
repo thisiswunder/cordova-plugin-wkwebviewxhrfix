@@ -1,6 +1,6 @@
 {
 	"name": "@thisiswunder/cordova-plugin-wkwebviewxhrfix",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Cordova plugin to fix local file XHR access inside WKWebView for Cordova iOS 6+",
 	"cordova": {
 		"id": "cordova-plugin-wkwebviewxhrfix",
@@ -9,7 +9,7 @@
 		]
 	},
 	"scripts": {
-    	"release": "npm pack && read -p 'GITHUB_TOKEN: ' GITHUB_TOKEN && export GITHUB_TOKEN=$GITHUB_TOKEN && rm -rf ./dist/*.tgz && mv *.tgz ./dist/release.tgz && release-it"
+		"release": "npm pack && read -p 'GITHUB_TOKEN: ' GITHUB_TOKEN && export GITHUB_TOKEN=$GITHUB_TOKEN && rm -rf ./dist/*.tgz && mv *.tgz ./dist/release.tgz && release-it"
 	},
 	"repository": {
 		"type": "git",
@@ -42,22 +42,22 @@
 		"release-it": "^14.5.0"
 	},
 	"release-it": {
-	  "git": {
-		"commitMessage": "chore: release ${version}",
-		"tagName": "${version}",
-		"requireBranch": "master",
-		"addUntrackedFiles": true,
-		"requireCleanWorkingDir": false
-	  },
-	  "npm": {
-		"publish": false
-	  },
-	  "github": {
-		"release": true,
-		"skipChecks": true,
-		"assets": [
-		  "dist/release.tgz"
-		]
-	  }
+		"git": {
+			"commitMessage": "chore: release ${version}",
+			"tagName": "${version}",
+			"requireBranch": "master",
+			"addUntrackedFiles": true,
+			"requireCleanWorkingDir": false
+		},
+		"npm": {
+			"publish": false
+		},
+		"github": {
+			"release": true,
+			"skipChecks": true,
+			"assets": [
+				"dist/release.tgz"
+			]
+		}
 	}
 }

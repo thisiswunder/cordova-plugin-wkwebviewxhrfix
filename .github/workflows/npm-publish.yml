@@ -24,10 +24,7 @@ jobs:
       - name: Install Yarn
         run: npm install -g plugman
       - run: npm i
-      - run: npm npm pack && rm -rf ./dist/*.tgz && mv *.tgz ./dist/release.tgz
+      - run: npm pack && rm -rf ./dist/*.tgz && mv *.tgz ./dist/release.tgz
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.TOKEN}}
-      - name: Uninstall Yarn
-        if: always()
-        run: npm uninstall -g yarn

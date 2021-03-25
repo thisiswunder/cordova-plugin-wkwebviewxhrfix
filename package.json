@@ -3,7 +3,7 @@
 	"version": "1.0.1",
 	"description": "Cordova plugin to fix local file XHR access inside WKWebView for Cordova iOS 6+",
 	"cordova": {
-		"id": "cordova-plugin-wkwebviewxhrfix",
+		"id": "@thisiswunder/cordova-plugin-wkwebviewxhrfix",
 		"platforms": [
 			"ios"
 		]
